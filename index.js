@@ -1,7 +1,7 @@
 const express = require('express');
 const api = require("./api");
 const app = express();
-const port = 8081;
+const port = process.env.PORT ||3000;
 const cors = require('cors');
 app.set("views", "./static/");
 app.use(express.static("./public/"))
